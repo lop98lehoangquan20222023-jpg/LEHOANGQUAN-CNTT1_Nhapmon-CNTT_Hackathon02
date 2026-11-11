@@ -106,11 +106,11 @@ logs\booking.log:6:2026-03-28 08:17:12 POST /api/thanh-toan status=500
 ### b) Lệnh đếm số dòng status=404 và kết quả
 
 ```shell
- (gci .\logs\booking.log | select-string "status=500").count
+ (gci .\logs\booking.log | select-string "status=404").count
 ```
 
 ```text
-6
+4
 
 ```
 
